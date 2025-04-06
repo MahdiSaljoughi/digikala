@@ -1,29 +1,25 @@
-@import "tailwindcss";
-
-@theme {
-  --color-main-red: #ed1944;
-  --shadow-bottom: 0 1px 0 rgba(0, 0, 0, 0.14), 0 2px 0 rgba(0, 0, 0, 0.05);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  color-scheme: light;
+    color-scheme: light;
 }
 
 * {
-  outline: none;
+    outline: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Vazir, sans-serif;
-  overflow-x: hidden;
+    font-family: Vazir, sans-serif;
+    overflow-x: hidden;
 }
 
 @font-face {
-  font-family: Vazir;
-  src: url("/font/Vazir-Medium-FD.woff2") format("woff2");
-  text-rendering: optimizeLegibility;
+    font-family: Vazir;
+    src: url("../assets/font/Vazir-Medium-FD.woff2") format("woff2");
 }

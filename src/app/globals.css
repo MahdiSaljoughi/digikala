@@ -1,35 +1,29 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-main-red: #ED1944;
-}
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+  --color-main-red: #ed1944;
+  --shadow-bottom: 0 1px 0 rgba(0, 0, 0, 0.14), 0 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Vazir, sans-serif;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/font/Vazir-Medium-FD.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
 }

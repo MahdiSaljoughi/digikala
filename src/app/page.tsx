@@ -1,9 +1,11 @@
-import ComingSoon from "@/components/ComingSoon";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-y-6 items-center justify-center h-screen">
-      <ComingSoon />
-    </div>
+    <MainLayout>
+      <div className="flex flex-col gap-y-6 items-center justify-center">
+        <p className="h-2000">Home</p>
+      </div>
+    </MainLayout>
   );
 }
